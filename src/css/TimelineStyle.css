@@ -1,0 +1,34 @@
+p.hide, img.hide {display: none;}
+
+p.show, img.show {display: initial;}
+
+div.background{
+    display: grid;
+    grid-template-areas: 'left left right right right'
+    'filler filler filler filler filler'
+    'bottom bottom bottom bottom bottom';
+    grid-gap: 30px;
+    padding: 10px;
+
+}
+
+div.description {
+    height: 200px;
+    width: 300px;
+    border: 10px seagreen solid;
+    overflow: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    grid-area: left;
+}
+
+div.picture {
+    height: 400px;
+    width: 500px;
+    border: 10px #d3d0ff solid;
+    grid-area: right;
+}
+
+div.timeline {
+    grid-area: bottom;
+}
