@@ -33,22 +33,16 @@ function makeButtons() {
     var attr = document.createAttribute("data-img");
     var attr1 = document.createAttribute("data-txt");
     attr.value = "petrarch-pic";
-    attr1.value = "petText";
-    petrarch.setAttribute("data-img", "petrarch-pic");
-    petrarch.setAttribute("data-txt", "petrarch-text");
-    buttonArr.push(petrarch);
-    attr.value = "petrarch-pic";
-    attr1.value = "petText";
+    attr1 = "petrarch-text";
     petrarch.setAttribute("data-img", "petrarch-pic");
     petrarch.setAttribute("data-txt", "petrarch-text");
     buttonArr.push(petrarch);
     //... make more buttons
 
     for (let i = 0; i < buttonArr.length; i++) {
-        buttonArr[i].setAttribute("border-radius", "100%");
-        buttonArr[i].setAttribute("padding", "20px");
-        buttonArr[i].setAttribute("background-color", "blue");
-        buttonArr[i].setAttribute("margin", "40px 20px");
+        buttonArr[i].style.borderRadius = "100px";
+        buttonArr[i].style.padding = "10px 10px";
+        buttonArr[i].style.backgroundColor = "blue";
         buttonArr[i].addEventListener("click", buttonClick);
         buttonArr[i].addEventListener("mouseover", buttonSwipe);
 

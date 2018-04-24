@@ -2,15 +2,34 @@ p.hide, img.hide {display: none;}
 
 p.show, img.show {display: initial;}
 
+div.header {
+    height: 200px;
+    width: 2000px;
+    background-image: url("Banner Design-01 (1).png");
+    background-size: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: header;
+}
+
+div.lTitle {grid-area: Ltitle; font-size: 26px}
+div.rTitle {grid-area: Rtitle; font-size: 26px}
+
+div.filler {
+    grid-area: filler;
+    font-size: 26px;
+    text-align: center;
+}
+
 div.background{
     display: grid;
-    grid-template-areas: 'header header header header header'
-            'left left right right right'
-    'filler filler filler filler filler'
-    'bottom bottom bottom bottom bottom';
-    grid-gap: 30px;
+    grid-template-areas: 'header header'
+            'Ltitle Rtitle'
+            'left right'
+    'filler filler'
+    'bottom bottom';
+    grid-gap: 50px;
     padding: 10px;
-
 }
 
 div.description {
@@ -24,12 +43,18 @@ div.description {
 }
 
 div.picture {
-    height: 400px;
-    width: 300px;
-    border: 2px grey solid;
+    /*height: auto;*/
+    width: auto;
     grid-area: right;
+    /*min-width: 100%;*/
+    min-height: 100%;
 }
 
 div.timeline {
     grid-area: bottom;
+    position: center;
+    width: 1500px;
+    border-top: darkslategrey 5px solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
