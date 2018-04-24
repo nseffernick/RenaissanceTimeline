@@ -4,7 +4,8 @@ p.show, img.show {display: initial;}
 
 div.background{
     display: grid;
-    grid-template-areas: 'left left right right right'
+    grid-template-areas: 'header header header header header'
+            'left left right right right'
     'filler filler filler filler filler'
     'bottom bottom bottom bottom bottom';
     grid-gap: 30px;
@@ -13,9 +14,9 @@ div.background{
 }
 
 div.description {
-    height: 200px;
-    width: 300px;
-    border: 10px seagreen solid;
+    height: 400px;
+    width: 700px;
+    border: 2px black solid;
     overflow: auto;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
@@ -24,8 +25,8 @@ div.description {
 
 div.picture {
     height: 400px;
-    width: 500px;
-    border: 10px #d3d0ff solid;
+    width: 300px;
+    border: 2px grey solid;
     grid-area: right;
 }
 
